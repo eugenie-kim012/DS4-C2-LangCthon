@@ -1,7 +1,3 @@
-# DS4-C2-LangCthon
-
-# README.md 파일을 생성하여 사용자에게 제공
-readme_content = """
 ## 🧠 OECD Aging and Health 자료 검색 봇
 
 본 프로젝트는 초고령 시대 보건복지 법안 제의 및 보고서 작성을 지원하고 정보 접근성을 강화하기 위해 기획된 AI 챗봇입니다. Streamlit과 LangChain을 기반으로 개발된 이 챗봇은 OECD에서 발간한 관련 보고서를 탐색하고, 정책 분석 초안 작성을 보조하며, 관련 질의응답을 지원합니다. 사용자는 PDF 보고서를 업로드하고, 주제/국가/연도별로 자료를 필터링하며, OpenAI API를 활용하여 질의응답 및 정책 분석을 수행할 수 있습니다. 정책 입안자, 학계, 행정가, 시민단체의 이해 관계자의 질문을 선임 보건 정책 분석가 페르소나가 초안을 작성해 주도록 작업되었습니다.
@@ -18,7 +14,7 @@ readme_content = """
 
 ---
 
-### 🚀 기술 스택
+### 🚀 기술 스텍
 
 | **기술 범주** | **사용된 기술 / 라이브러리** | **역할 / 기능** |
 | --- | --- | --- |
@@ -43,7 +39,9 @@ readme_content = """
 
 ### 📁 프로젝트 폴더 구조 예시
 
-\`\`\`
+```
+bash
+CopyEdit
 your-repo/
  ├── Aging_Health_V3.py
  ├── requirements.txt
@@ -51,7 +49,7 @@ your-repo/
  │    └── aging_health_classification.csv
  ├── OECD_Aging_Report/      # PDF 파일 위치
  └── chroma_db_local_files_pdf/  # 벡터 DB 저장 폴더
-\`\`\`
+```
 
 ---
 
@@ -74,11 +72,3 @@ your-repo/
 ### 🙌 기여
 
 해당 프로젝트는 모두의 연구소 랭체인톤 프로젝트 발표를 위해 기획된 프로젝트입니다. 기여나 개선 아이디어가 있다면 부담없이 남겨주시길 바랍니다.
-"""
-
-file_path = "/mnt/data/README.md"
-with open(file_path, "w", encoding="utf-8") as f:
-    f.write(readme_content)
-
-file_path
-
