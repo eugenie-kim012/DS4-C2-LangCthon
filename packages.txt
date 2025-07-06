@@ -1,0 +1,17 @@
+# 내부 주요 모듈 및 라이브러리 구조 (참고용)
+Aging_Health_V3.py
+OECD_Aging_Report/        # PDF 파일 보관 폴더
+data/                     # CSV 데이터 보관 폴더
+chroma_db_local_files_pdf/ # 로컬 벡터 DB 저장 폴더
+
+# Python 코드에서 사용되는 주요 모듈
+streamlit
+pandas
+os
+shutil
+dotenv
+openai
+langchain
+langchain_community
+langchain_openai
+chromadb
