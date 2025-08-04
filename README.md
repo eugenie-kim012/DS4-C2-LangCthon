@@ -37,6 +37,27 @@ This project is an AI chatbot designed to support the proposal of health and wel
 |  | RecursiveCharacterTextSplitter | 문서 청크 분할 (RAG 검색 최적화) |
 | **API / 보안 관리** | Streamlit + .env + os.environ | OpenAI API 키 보안 관리, 런타임 환경 전달 |
 
+### 🛠️ 기술 스택 상세 / Detailed Tech Stack
+
+| **Technology Category** | **Technologies / Libraries Used** | **Role / Function** |
+| --- | --- | --- |
+| **Frontend / App Framework** | Streamlit | Provides web UI (sidebar, chat interface, forms, download buttons) |
+|  | Python | Implements overall application logic |
+| **Data Engineering** | pandas | CSV data loading, preprocessing, filtering (topic, country, year) |
+|  | os, shutil | File I/O operations, folder management, DB folder deletion |
+|  | dotenv | Loading API keys from .env files |
+| **AI / Natural Language Processing (NLP)** | OpenAI (GPT-4o) | Generates responses to user queries, creates policy analysis drafts |
+|  | LangChain | Creates RAG chains, combines document retrieval with LLM responses |
+|  | OpenAIEmbeddings | Generates document vector embeddings |
+|  | Chroma | Local vector database, vector search functionality |
+|  | ConversationalRetrievalChain | Document retrieval-based conversational QA chain |
+|  | ConversationBufferMemory | Manages conversation history |
+|  | StreamlitChatMessageHistory | Integrates chat history within Streamlit |
+|  | PromptTemplate | Dynamic generation of LLM prompt templates |
+| **Document Processing / Information Retrieval** | PyPDFLoader (LangChain Community) | PDF document text extraction |
+|  | RecursiveCharacterTextSplitter | Document chunk splitting (RAG search optimisation) |
+| **API / Security Management** | Streamlit + .env + os.environ | OpenAI API key security management, runtime environment handling |
+
 ---
 
 ### 📁 프로젝트 폴더 구조 예시/  Project Folder Structure Example
